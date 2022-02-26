@@ -10,7 +10,8 @@ const sequelize = require("./databaseService");
 const bodyparser=require('body-parser');
 global.appRoot = path.resolve(__dirname);
 app.use(express.urlencoded());
-
+const db = sequelize.createDbConnection();
+global.db = db;
 //set locals
 app.use(function(req, res, next) {
     res.locals.admin = req.session.user;
@@ -18,8 +19,7 @@ app.use(function(req, res, next) {
     next();
   });
 
-// app.use('/',require('./routes'));
-sequelize.createDbConnection();
+app.use('/',require('./routes'));
 app.listen(port,function(err){
     if(err){
         console.log("error in running the server on port");

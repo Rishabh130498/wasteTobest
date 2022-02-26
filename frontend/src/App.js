@@ -1,12 +1,12 @@
-import Dashboard from './Dashboard'
+import DashboardContent from './Dashboard'
 import Home from './Home';
 
 const App = () => {
   return (
     <div className="App">
-      <Dashboard>
+      <DashboardContent>
         <Home />
-      </Dashboard>
+      </DashboardContent>
     </div>
   );
 }
