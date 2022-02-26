@@ -1,7 +1,12 @@
-function App() {
+import Dashboard from './Dashboard'
+import Home from './Home';
+
+const App = () => {
   return (
     <div className="App">
-      Waste to best
+      <Dashboard>
+        <Home />
+      </Dashboard>
     </div>
   );
 }
