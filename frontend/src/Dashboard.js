@@ -6,7 +6,7 @@ import Drawer from "@mui/material/Drawer";
 // import Box from "@mui/material/Box";
 import AppBar from '@mui/material/AppBar';
 import Toolbar from "@mui/material/Toolbar";
-// import List from "@mui/material/List";
+import List from "@mui/material/List";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
@@ -18,7 +18,7 @@ import Link from "@mui/material/Link";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-// import { mainListItems, secondaryListItems } from "../components/ListItems";
+import { mainListItems, secondaryListItems } from "./components/ListItems"
 
 function Copyright() {
   return (
@@ -171,9 +171,9 @@ const Dashboard = (properties) => {
           </IconButton>
         </div>
         <Divider />
-        {/* <List>{mainListItems}</List> */}
+        <List>{mainListItems}</List>
         <Divider />
-        {/* <List>{secondaryListItems}</List> */}
+        <List>{secondaryListItems}</List>
       </Drawer>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
