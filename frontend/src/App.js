@@ -28,8 +28,9 @@ return (
       ) : (
           <Box component="main">
               <Routes>
-                <Route exact path="/login" element={<SignIn />} />
-                <Route exact path="/signup" element={<SignUp />} />
+                <Route path="/" element={<SignIn />} />
+                <Route path="/login" element={<SignIn />} />
+                <Route path="/signup" element={<SignUp />} />
               </Routes>
           </Box>
       )}
