@@ -9,13 +9,12 @@ const sequelize = require("./databaseService");
 
 const bodyparser=require('body-parser');
 global.appRoot = path.resolve(__dirname);
+console.log(global.appRoot);
 app.use(express.urlencoded());
 const db = sequelize.createDbConnection();
 global.db = db;
 //set locals
 app.use(function(req, res, next) {
-    res.locals.admin = req.session.user;
-    console.log(res.locals.admin);
     next();
   });
 

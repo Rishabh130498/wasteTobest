@@ -124,6 +124,7 @@ function DashboardContent(props) {
               <Badge badgeContent={4} color="secondary">
                 <NotificationsIcon />
               </Badge>
+              <Typography>Peeyush Mamodia</Typography>
             </IconButton>
           </Toolbar>
         </AppBar>

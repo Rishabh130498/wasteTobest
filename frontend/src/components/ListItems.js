@@ -14,18 +14,6 @@ export const mainListItems = (
   <div>
     <ListItem button>
       <ListItemIcon>
-        <AccessTimeIcon />
-      </ListItemIcon>
-      <ListItemText primary="TimeSheet" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <ClassIcon />
-      </ListItemIcon>
-      <ListItemText primary="ClassData" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
         <AssessmentIcon />
       </ListItemIcon>
       <ListItemText primary="Report" />
